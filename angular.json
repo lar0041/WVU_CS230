@@ -25,7 +25,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/appleLogo.png"
+              "src/appleLogo.png",
+              "src/currentlyPlaying.png"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
