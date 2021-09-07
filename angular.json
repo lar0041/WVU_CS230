@@ -26,14 +26,22 @@
               "src/favicon.ico",
               "src/assets",
               "src/appleLogo.png",
-              "src/currentlyPlaying.png"
+              "src/currentlyPlaying.png",
+              "src/albumCover.png",
+              "src/albumCover2.png",
+              {
+                "glob": "bootstrap-icons.svg",
+                "input": "./node_modules/bootstrap-icons/",
+                "output": "/"
+              }
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ]
           },
           "configurations": {
