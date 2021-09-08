@@ -1,0 +1,44 @@
+.bi{
+    color: black;
+}
+/* .carousel-slide {
+    position: fixed;
+    top: 130px;
+    left: 299px;
+    width: 1209.2px;
+    height: 450px;
+}
+
+.carousel-inner{
+    position: fixed;
+    top: 130px;
+    left: 299px;
+    width: 1209.2px;
+    height: 450px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.carousel-control-prev {
+    position: fixed;
+    top: 130px;
+    left: 259px;
+    width: 40px;
+    height: 450px;
+}
+
+.carousel-control-next {
+    position: fixed;
+    top: 130px;
+    right: 0px;
+    width: 40px;
+    height: 450px;
+}
+
+.bi{
+    color: black;
+} */

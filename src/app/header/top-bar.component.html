@@ -1,100 +1,76 @@
-<html>
+<script>
+    // var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    // var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    //     return new bootstrap.Popover(popoverTriggerEl)
+    // })
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
 
-<head>
-    <script>
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        })
-    </script>
+<header class="border" style="height: 55px;">
+    <nav class="navbar" style="height: 44px; margin-top: 5px; padding: 0px;">
+        <ul class="nav play-controls" style="margin-left: 112px;">
+            <li class="nav-item shuffle" style=" margin-top: 3px;">
+                <svg class="bi" width="14px" height="14px">
+                    <use xlink:href="bootstrap-icons.svg#shuffle" />
+                </svg>
+            </li>
+            <li class="nav-item back" style="margin-left: 15px; margin-right: 5px; margin-top: 3px;">
+                <svg class="bi" width="20px" height="20px">
+                    <use xlink:href="bootstrap-icons.svg#skip-backward-fill" />
+                </svg>
+            </li>
+            <li class="nav-item play" style="margin-bottom: 13px;">
+                <svg class="bi" width="34px" height="34px">
+                    <use xlink:href="bootstrap-icons.svg#play-fill" />
+                </svg>
+            </li>
+            <li class="nav-item forward" style="margin-left: 5px; margin-right: 15px; margin-top: 3px;">
+                <svg class="bi" width="20px" height="20px">
+                    <use xlink:href="bootstrap-icons.svg#skip-forward-fill" />
+                </svg>
+            </li>
+            <li class="nav-item repeat" style="margin-top:3px;">
+                <svg class="bi" width="14px" height="14px">
+                    <use xlink:href="bootstrap-icons.svg#arrow-repeat" />
+                </svg>
+            </li>
+        </ul>
 
-    <style>
-        img {
-            width: 30px;
-            height: 30px;
-        }
+        <div class="currently-playing" style="margin-left: 45px; margin-bottom: 15px">
+            <img style="width: 510px; height: 44px" src="./assets/currentlyPlaying.png">
+        </div>
 
-        header {
-            text-align: left;
-            padding: 0px;
-            position: fixed;
-            top: 0;
-            left: 259px;
-            width: 1276px; 
-            height: 55px;
-            background-color: rgb(253, 253, 255);
-            color: rgb(145, 142, 142);
-            border: black;
-            border-bottom: rgb(255, 1, 1);
-        }
-        
-    </style>
+        <ul class="nav" style="margin-left: 32px; margin-bottom: 20px;">
+            <li class="nav-item">
+                <svg class="bi" width="14px" height="14px">
+                    <use xlink:href="bootstrap-icons.svg#volume-up-fill" />
+                </svg>
+            </li>
+            <li class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" data-slider-id="volumeSlider"
+                    id="myRange" style="width:75px; height: 4px">
+            </li>
+        </ul>
 
-</head>
+        <div class="up-next-profile" style="margin-bottom: 10px;">
+            <button type="button" class="btn btn-white">
+                <!-- <i class="bi bi-list-ul"></i> -->
+                <svg class="bi" width="24px" height="18px" style="margin-left: 25px; margin-bottom: 10px">
+                    <use xlink:href="bootstrap-icons.svg#list-ul" />
+                </svg>
+            </button>
 
-<body>
-
-    <header class="border" style="height: 55px;">
-        <nav class="navbar" style="height: 44px; margin-top: 5px; padding: 0px;">
-            <ul class="nav play-controls" style="margin-left: 112px;">
-                <li class="nav-item shuffle" style=" margin-top: 3px;">
-                    <svg class="bi" width="14px" height="14px">
-                        <use xlink:href="bootstrap-icons.svg#shuffle" />
-                    </svg>
-                </li>
-                <li class="nav-item back" style="margin-left: 15px; margin-right: 5px; margin-top: 3px;">
-                    <svg class="bi" width="20px" height="20px">
-                        <use xlink:href="bootstrap-icons.svg#skip-backward-fill" />
-                    </svg>
-                </li>
-                <li class="nav-item play" style="margin-bottom: 13px;">
-                    <svg class="bi" width="34px" height="34px">
-                        <use xlink:href="bootstrap-icons.svg#play-fill" />
-                    </svg>
-                </li>
-                <li class="nav-item forward" style="margin-left: 5px; margin-right: 15px; margin-top: 3px;">
-                    <svg class="bi" width="20px" height="20px">
-                        <use xlink:href="bootstrap-icons.svg#skip-forward-fill" />
-                    </svg>
-                </li>
-                <li class="nav-item repeat" style="margin-top:3px;">
-                    <svg class="bi" width="14px" height="14px">
-                        <use xlink:href="bootstrap-icons.svg#arrow-repeat" />
-                    </svg>
-                </li>
-            </ul>
-
-            <div class="currently-playing" style="margin-left: 45px; margin-bottom: 15px">
-                <img style="width: 510px; height: 44px" src="./assets/currentlyPlaying.png">
-            </div>
-
-            <ul class="nav" style="margin-left: 32px; margin-bottom: 20px;">
-                <li class="nav-item">
-                    <svg class="bi" width="14px" height="14px">
-                        <use xlink:href="bootstrap-icons.svg#volume-up-fill" />
-                    </svg>
-                </li>
-                <li class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" data-slider-id="volumeSlider" id="myRange" style="width:75px; height: 4px">
-                </li>
-            </ul>
-
-            <div class="up-next-profile" style="margin-bottom: 10px;">
-                <button type="button" class="btn btn-white">
-                    <!-- <i class="bi bi-list-ul"></i> -->
-                    <svg class="bi" width="24px" height="18px" style="margin-left: 25px; margin-bottom: 10px">
-                        <use xlink:href="bootstrap-icons.svg#list-ul" />
-                    </svg>
-                </button>
-
-                <button type="button" class="btn btn-lg btn-white" data-bs-toggle="popover"
-                    data-placement="left" title="Popover title" aria-expanded="false" id="popover1"
-                    data-bs-content="And here's some amazing content. It's very engaging. Right?">
-                    <svg class="bi" width="24px" height="25px" color="red" style="margin-bottom: 10px">
-                        <use xlink:href="bootstrap-icons.svg#person-circle" />
-                    </svg>
-                </button>
-<!--
+            <button type="button" class="btn btn-lg btn-white" data-bs-toggle="popover" data-placement="left"
+                title="Popover title" aria-expanded="false" id="popover1"
+                data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                <svg class="bi" width="24px" height="25px" color="red" style="margin-bottom: 10px">
+                    <use xlink:href="bootstrap-icons.svg#person-circle" />
+                </svg>
+            </button>
+            <!--
                 <ul class="popover-menu" aria-labelledby="popover1">
                     <li>
                         <a class="popover-item text-dark" href="#">
@@ -114,11 +90,7 @@
                         </a>
                     </li>
                 </ul> -->
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-    </header>
-
-</body>
-
-</html>
+</header>

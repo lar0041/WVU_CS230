@@ -1,0 +1,32 @@
+img{
+    width: 20px;
+    height: 20px;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 259px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(247, 242, 241, 0.795);
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.bi{
+    color: red;
+    height: 14px;
+    width: 14px;
+}
+
+.bi2{
+    color: gray;
+    height: 14px;
+    width: 14px;
+}

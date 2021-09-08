@@ -1,82 +1,50 @@
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <style>
-        .carousel-slide {
-            position: fixed;
-            top: 130px;
-            left: 299px;
-            width: 1209.2px;
-            height: 450px;
-        }
-
-        .carousel-inner{
-            position: fixed;
-            top: 130px;
-            left: 299px;
-            width: 1209.2px;
-            height: 450px;
-        }
-
-        .container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-
-        .carousel-control-prev {
-            position: fixed;
-            top: 130px;
-            left: 259px;
-            width: 40px;
-            height: 450px;
-        }
-
-        .carousel-control-next {
-            position: fixed;
-            top: 130px;
-            right: 0px;
-            width: 40px;
-            height: 450px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="carouselControls" class="carousel-slide" data-bs-ride="carousel">
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <app-cards1>Loading</app-cards1>
-                    <app-cards1>Loading</app-cards1>
-                    <app-cards1>Loading</app-cards1>
-                    <app-cards1>Loading</app-cards1>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <app-cards2>Loading</app-cards2>
-                    <app-cards2>Loading</app-cards2>
-                    <app-cards2>Loading</app-cards2>
-                    <app-cards2>Loading</app-cards2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <app-cards1>Loading</app-cards1>
-                    <app-cards1>Loading</app-cards1>
-                    <app-cards1>Loading</app-cards1>
-                    <app-cards1>Loading</app-cards1>
-                </div>
-            </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" href="carouselControls" data-bs-slide="prev">
-            <i class="bi bi-chevron-left text-dark"></i>
-        </button>
-        <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next"> -->
-        <button class="carousel-control-next" type="button" href="carouselControls" data-bs-slide="next">
-            <i class="bi bi-chevron-right text-dark"></i>
-        </button>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <app-cards1>Loading</app-cards1>
+      </div>
+      <div class="carousel-item">
+        <app-cards2>Loading</app-cards2>
+      </div>
+      <div class="carousel-item">
+        <app-cards1>Loading</app-cards1>
+      </div>
     </div>
-</body>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#chevron-left" />
+        </svg>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#chevron-right" />
+        </svg>
+    </button>
+  </div>
+<!-- <div id="carouselControls" class="carousel-slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+                <app-cards1>Loading</app-cards1>
+        </div>
+        <div class="carousel-item">
+                <app-cards2>Loading</app-cards2>
+        </div>
+        <div class="carousel-item">
+                <app-cards1>Loading</app-cards1>
+        </div>
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" href="carouselControls" data-bs-slide="prev">
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#chevron-left" />
+        </svg>
+    </button>
+    <button class="carousel-control-next" type="button" href="carouselControls" data-bs-slide="next">
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#chevron-right" />
+        </svg>
+    </button>
+
+</div> -->

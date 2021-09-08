@@ -1,83 +1,85 @@
-<!DOCTYPE html>
-<html>
-<head>    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-img{
-    width: 20px;
-    height: 20px;
-}
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 259px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(247, 242, 241, 0.795);
-  overflow-x: hidden;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-</style>
-</head>
-<body>
-
 <div class="sidenav">
     <a class="nav-link text-dark" href="#">
         <img src="./assets/appleLogo.png">
         Music
     </a>
-    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-    aria-describedby="search-addon"/>
+
+    <div class="input-group">
+        <span class="input-group-append">
+            <button class="btn  bg-white  ms-n3" type="button">
+                <svg class="bi2">
+                    <use xlink:href="bootstrap-icons.svg#search" />
+                </svg>
+            </button>
+        </span>
+        
+        <input class="form-control " type="text" value="search" id="example-search-input">
+ </div>
+    <!-- <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+        aria-describedby="search-addon" /> -->
+
+
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-play-circle text-danger"></i>
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#play-circle" />
+        </svg>
         Listen Now
     </a>
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-grid text-danger"></i>
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#grid" />
+        </svg>
         Browse
     </a>
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-broadcast text-danger"></i>
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#broadcast" />
+        </svg>
         Radio
     </a>
     <p class="text-secondary">Library</p>
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-clock text-danger"></i>
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#clock" />
+        </svg>
         Recently Added
     </a>
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-mic text-danger"></i>
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#mic" />
+        </svg>
         Artists
     </a>
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-square text-danger"></i>
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#square" />
+        </svg>
         Albums
     </a>
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-music-note text-danger"></i>
+        <svg class="bi">
+            <use xlink:href="bootstrap-icons.svg#music-note" />
+        </svg>
         Songs
     </a>
     <p class="text-secondary">Playlists</p>
     <a class="nav-link text-dark" href="#">
-        <i class="bi bi-music-note-list text-secondary"></i>
+        <svg class="bi2">
+            <use xlink:href="bootstrap-icons.svg#music-note-list" />
+        </svg>
         1
     </a>
 
     <div class="nav-item fixed-bottom">
         <hr style="width: 200px; left: 0">
         <a href="#" class="text-dark" style="padding: 3px">
-            <i class="bi bi-music-note-beamed"></i>
+            <svg class="bi2">
+                <use xlink:href="bootstrap-icons.svg#music-note-beamed" />
+            </svg>
             Open in iTunes
-            <i class="bi bi-arrow-up-right"></i>
+            <svg class="bi2">
+                <use xlink:href="bootstrap-icons.svg#arrow-up-right" />
+            </svg>
         </a>
     </div>
 </div>
-</body>
-</html>
