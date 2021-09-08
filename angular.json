@@ -25,10 +25,10 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/appleLogo.png",
-              "src/currentlyPlaying.png",
-              "src/albumCover.png",
-              "src/albumCover2.png",
+              "src/assets/appleLogo.png",
+              "src/assets/currentlyPlaying.png",
+              "src/assets/albumCover.png",
+              "src/assets/albumCover2.png",
               {
                 "glob": "bootstrap-icons.svg",
                 "input": "./node_modules/bootstrap-icons/",
