@@ -3,16 +3,28 @@ img {
     height: 30px;
 }
 
-header {
-    text-align: left;
+.header {
+     /* text-align: left;
     padding: 0px;
     position: fixed;
     top: 0;
-    left: 259px;
+    left: 260px;
     width: 1276px; 
-    height: 55px;
+    height: 55px;  */
     background-color: rgb(253, 253, 255);
     color: rgb(145, 142, 142);
     border: black;
     border-bottom: rgb(255, 1, 1);
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+/* .play-controls{
+    width: 156px;
+    height: 42px;
+} */

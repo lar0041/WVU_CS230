@@ -1,8 +1,22 @@
-.card{
+.card-header{
+  border: none;
+}
+.card-body{
+  margin: 0px;
+  background-color: gray;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+.card-text{
+  text-align: center;
+  color: white;
+}
+
+/* .card{
     position: relative;
     top: 20%;
-    width: 279.8px;
-    height: 380.4px;
+    size: auto;
     border: none;
   }
 
@@ -15,12 +29,11 @@
   .card-content {
     position: relative;
     bottom: 0;
-    width: 279.8px;
-    height: 347.8px;
+    size: auto;
   }
 
   .card-body {
     background-color: rgba(26, 25, 25, 0.829);
     color: white;
     font-size: small;
-  }
+  } */

@@ -1,10 +1,5 @@
 footer {
-    text-align: left;
-    padding: 3px;
-    position: fixed;
-    bottom: 0;
-    left: 259px;
-    width: 100%;
-    background-color: rgba(235, 228, 226, 0.527);
-    color: gray;
-  }
+  text-align: left;
+  background-color: rgb(228, 227, 227);
+  color: gray;
+}
