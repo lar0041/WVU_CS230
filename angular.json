@@ -29,6 +29,8 @@
               "src/assets/currentlyPlaying.png",
               "src/assets/albumCover.png",
               "src/assets/albumCover2.png",
+              "src/assets/albumCover3.png",
+              "src/assets/albumCover4.png",
               {
                 "glob": "bootstrap-icons.svg",
                 "input": "./node_modules/bootstrap-icons/",

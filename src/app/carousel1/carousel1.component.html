@@ -1,22 +1,19 @@
 <div id="carouselExampleControls" class="carousel slide row" data-interval="false">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
+        <div *ngFor="let card of cards;">
+          <app-cards1 title={{card.title}} imagePath={{card.imagePath}} description={{card.description}}>Loading</app-cards1>
+        </div>
       </div>
       <div class="carousel-item">
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
+        <div *ngFor="let card of cards;">
+          <app-cards1 title={{card.title}} imagePath={{card.imagePath}} description={{card.description}}>Loading</app-cards1>
+        </div>
       </div>
       <div class="carousel-item">
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
-        <app-cards1>Loading</app-cards1>
+        <div *ngFor="let card of cards;">
+          <app-cards1 title={{card.title}} imagePath={{card.imagePath}} description={{card.description}}>Loading</app-cards1>
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

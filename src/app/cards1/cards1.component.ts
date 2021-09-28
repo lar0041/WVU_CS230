@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component ({
   selector: 'app-cards1',
@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cards1.component.css']
 })
 export class Cards1Component {
-  title = 'Made for You';
-  image = './assets/albumCover.png';
-  description = 'Lucas Reinhardt\'s Station';
+  @Input()
+  title! :string;
+  @Input()
+  imagePath! :string;
+  @Input()
+  description! :string;
 }

@@ -1,5 +1,11 @@
-.card-header{
+.card{
   border: none;
+}
+.card-header{
+  background: none;
+}
+.card-img-top{
+  width: 260px;
 }
 .card-body{
   margin: 0px;
@@ -12,28 +18,3 @@
   text-align: center;
   color: white;
 }
-
-/* .card{
-    position: relative;
-    top: 20%;
-    size: auto;
-    border: none;
-  }
-
-  .card-title{
-    position: relative;
-    top: 0;
-    color: gray;
-  }
-
-  .card-content {
-    position: relative;
-    bottom: 0;
-    size: auto;
-  }
-
-  .card-body {
-    background-color: rgba(26, 25, 25, 0.829);
-    color: white;
-    font-size: small;
-  } */
