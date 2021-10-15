@@ -14,6 +14,8 @@ import { BrowseBodyComponent } from './browse-body/browse-body.component';
 import { RadioBodyComponent } from './radio-body/radio-body.component';
 import { PlaylistBodyComponent } from './playlist-body/playlist-body.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { AppRoutingModule } from './app-routing.module';
     Cards1Component, Carousel1Component, 
     LayoutComponent, ListenNowBodyComponent,
     AlbumBodyComponent, BrowseBodyComponent,
-    RadioBodyComponent, PlaylistBodyComponent
+    RadioBodyComponent, PlaylistBodyComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
