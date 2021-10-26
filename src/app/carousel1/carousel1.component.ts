@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CardInfo } from '../cards1/card-info.model';
 import { CardInfoService } from '../cards1/card-info.service';
 import { Card } from '../cards1/card.model';
-// import { mock_cards } from '../cards1/mock-cards';
 
 @Component ({
   selector: 'app-carousel1',
@@ -14,10 +13,23 @@ export class Carousel1Component {
 
   constructor(private cardService: CardInfoService) {
     this.cardService.getCardInfo().subscribe((data:CardInfo[]) => {
+      console.log(data);
       for(let i = 0; i < data.length; i++){
         var card:(CardInfo | undefined)  = data[i];
         this.cards.push(new Card(card));
       }
+    })
+  }
+
+  ngOnInit(): void{
+    console.log('showing card data');
+    this.showCardInfo();
+  }
+
+  showCardInfo(){
+    this.cardService.getCardInfo().subscribe((data: CardInfo[]) => {
+      console.log(data);
+      this.cards = data;
     })
   }
 }

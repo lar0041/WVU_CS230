@@ -12,4 +12,8 @@ export class UserInfoService{
     getUserInfo() {
         return this.http.get<UserInfo>(this.url);
     }
+
+    editUserInfo(data:UserInfo) {
+        return this.http.put(this.url, data);
+    }
 }

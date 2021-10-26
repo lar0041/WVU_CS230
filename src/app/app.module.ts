@@ -16,6 +16,9 @@ import { PlaylistBodyComponent } from './playlist-body/playlist-body.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { EditUserInfoComponent } from './header/edit-user-info.component';
+import { FormsModule } from '@angular/forms';
+import { EditCardInfoComponent } from './header/edit-card-info.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,14 @@ import { UserInfoComponent } from './header/user-info.component';
     LayoutComponent, ListenNowBodyComponent,
     AlbumBodyComponent, BrowseBodyComponent,
     RadioBodyComponent, PlaylistBodyComponent,
-    UserInfoComponent
+    UserInfoComponent, EditUserInfoComponent,
+    EditCardInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

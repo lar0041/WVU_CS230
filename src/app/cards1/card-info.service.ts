@@ -10,6 +10,10 @@ export class CardInfoService{
     }
 
     getCardInfo() {
-         return this.http.get<CardInfo[]>(this.url);
+         return this.http.get<CardInfo[]>("https://applemusic-app-default-rtdb.firebaseio.com/Cards.json");
+    }
+
+    editCardInfo(data:CardInfo, counter:number) {
+        return this.http.put("https://applemusic-app-default-rtdb.firebaseio.com/Cards/" + counter +".json", data);
     }
 }

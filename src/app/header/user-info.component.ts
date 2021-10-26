@@ -24,4 +24,5 @@ export class UserInfoComponent implements OnInit{
             this.myInfo = data;
         })
     }
-}
+}//this one is done
+//is there a way to change the info without manually refreshing the page after submission

@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form #postForm="ngForm" (ngSubmit) = "onEditCardInfo(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">Card Title:</span>
+                    <input type="text" id="title" class="form-control" ngModel name="title">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3">Image Path:</span>
+                    <input type="text" class="form-control" id="imagePath" 
+                    aria-describedby="basic-addon3"
+                    ngModel name = "imagePath">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">description:</span>
+                    <input type="text" id="description" class="form-control" ngModel name="description">
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    Update Card
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
