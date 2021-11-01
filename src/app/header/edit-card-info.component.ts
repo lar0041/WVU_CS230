@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { CardInfo } from "../cards1/card-info.model";
 import { CardInfoService } from "../cards1/card-info.service";
+import { DatabaseService } from "../listen-now-body/database.service";
 
 let counter: number = -1;
 
@@ -10,8 +11,8 @@ let counter: number = -1;
 })
 
 export class EditCardInfoComponent{
-    constructor(private cardService:CardInfoService){
-
+    constructor(private cardService:CardInfoService, private dbService:DatabaseService){
+        dbService.showData();
     }
 
     onEditCardInfo(data:CardInfo){
