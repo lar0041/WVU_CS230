@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "applemusic-app": {
+      "hosting": {
+        "appleMusic": [
+          "applemusic-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "applemusic-app"
+  }
+}

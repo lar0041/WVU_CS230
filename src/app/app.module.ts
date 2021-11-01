@@ -19,6 +19,9 @@ import { UserInfoComponent } from './header/user-info.component';
 import { EditUserInfoComponent } from './header/edit-user-info.component';
 import { FormsModule } from '@angular/forms';
 import { EditCardInfoComponent } from './header/edit-card-info.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import { EditCardInfoComponent } from './header/edit-card-info.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
