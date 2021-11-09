@@ -23,6 +23,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     AlbumBodyComponent, BrowseBodyComponent,
     RadioBodyComponent, PlaylistBodyComponent,
     UserInfoComponent, EditUserInfoComponent,
-    EditCardInfoComponent
+    EditCardInfoComponent, AuthComponent
   ],
   imports: [
     BrowserModule,
